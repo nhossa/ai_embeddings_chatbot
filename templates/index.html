@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Search Query Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: #f4f4f9;
+            color: #333;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background: #45a049;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ask a Question</h1>
+        <p>Type your question below and receive information from the text corpus:</p>
+        <form action="/ask" method="post">
+            <textarea name="question" rows="4" placeholder="Enter your question here..."></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
